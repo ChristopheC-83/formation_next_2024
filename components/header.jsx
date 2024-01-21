@@ -5,6 +5,7 @@ import ProfileBtn from "./profile-btn";
 import ResponsiveMenu from "./responsive-menu";
 import ToggleTheme from "./toggle-theme";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -13,9 +14,11 @@ export default function Header() {
         <div className="flex justify-between align-items">
           <div className="flex items-center gap-2">
             <ResponsiveMenu className=""/>
-            <h1 className="pt-1 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-red-400 to-blue-600">
-              Nextblog
-            </h1>
+            <Link href="/">
+              <h1 className="pt-1 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-red-400 to-blue-600">
+                Nextblog
+              </h1>
+            </Link>
           </div>
           <div className="flex justify-between">
             <Navbar />
