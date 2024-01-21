@@ -52,7 +52,7 @@ export default function Home() {
           ))}
         </div>
 
-        <PostsLists items={POSTS}/>
+        <PostsLists posts={POSTS}/>
       </div>
     </PageContainer>
   );
